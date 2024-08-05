@@ -30,11 +30,11 @@ To use kaggle datasets in colab you should follow these steps :
 
 => Select Only Pneumonia from this dataset, There are 3875images from train(not test, val)
 
-3, https://www.kaggle.com/datasets/tawsifurrahman/tuberculosis-tb-chest-xray-dataset
+3., https://www.kaggle.com/datasets/tawsifurrahman/tuberculosis-tb-chest-xray-dataset
 
 => Select Only Tuberculosis from this dataset, There are 700images
 
 4. https://www.kaggle.com/datasets/nih-chest-xrays/data
 
 => Select only 8 lung diseases(`Edema`, `Pneumonia`,`Tuberculosis`, `Cardiomegaly`, `Emphysema`, `Covid`, `Effusion`, `Atelectasis`) and No Finding
-4. 
+📌 There are totla 112,000images from this dataset, so it will take 10~20mintues for loading.
