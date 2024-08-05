@@ -9,7 +9,10 @@
 
    ![QUAVEL](https://github.com/user-attachments/assets/ef8f3ac6-5c43-499d-b4d4-83fe258fc552)
 
+   In this [qubvel/efficientnet](https://github.com/qubvel/efficientnet)
+   ![ns](https://github.com/user-attachments/assets/b62a30a8-c0ef-4dd0-92e8-fb4f2edbf5b1)
 
+   -> We can choose below models(imagenet or noisy student) 
 ## Cross Validation
 
 ## Metric
