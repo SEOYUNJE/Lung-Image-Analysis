@@ -23,7 +23,7 @@
 
 
 - Backbone: `EfficientnetB0_Ns`
-- SeResNet18's Input Size: `256X256`
+- Input Size: `256X256`
 - Image Interpolation: `LANCZOS`
 - Training for 10 epochs
 - split: StratifiedKFold(n=5)
