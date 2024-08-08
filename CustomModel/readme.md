@@ -17,7 +17,10 @@
 - Dropout: None
 - Optimizer: `Adam`
 
-## Model2. EfficientNet - CBAM Model
+## Model2. DOLG(Efficient) - CBAM Model
+
+
+
 
 - Backbone: `EfficientnetB0_Ns`
 - SeResNet18's Input Size: `256X256`
