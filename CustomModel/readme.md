@@ -19,14 +19,14 @@
 
 ## Model2. DOLG(Efficient) - CBAM Model
 
-
+![dolg](https://github.com/user-attachments/assets/a02f999e-8cfd-41fd-94bd-e13889a7cbe8)
 
 
 - Backbone: `EfficientnetB0_Ns`
 - SeResNet18's Input Size: `256X256`
 - Image Interpolation: `LANCZOS`
 - Training for 10 epochs
-- split: GroupKFold(n=5)
+- split: StratifiedKFold(n=5)
 (But for Speeding Up, train only fold1)
 - augment: HorizontalFlip(p=0.5)
 - Batch: `16`
