@@ -1,6 +1,6 @@
 ## Model1. Hybrid SeResNet with Vit 
 
-![hybrid seresnet](https://github.com/user-attachments/assets/f6bf0c1b-2651-4107-96fc-878d0aec0ce5)
+![hybr](https://github.com/user-attachments/assets/cfab5ebe-366a-426c-921a-3073319405f5)
 
 - Backbone: `SeResNet18`, `Vit b16`
 - SeResNet18's Input Size: `512X512`
