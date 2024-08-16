@@ -50,3 +50,7 @@ label_unique가 2이상인 no finding의 위치는 크게 2가지로 분류할 �
 ## Conclusion
 
 아래의 그래프는 최종 Loss graph로써 No Finding 중 No Change에 대한 가능성을 짐작할 수 있다. 
+
+![label_ff](https://github.com/user-attachments/assets/94807359-9a7e-4b75-aa12-b989229fe972)
+
+
