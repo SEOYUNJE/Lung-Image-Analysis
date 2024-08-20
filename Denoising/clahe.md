@@ -6,7 +6,15 @@
 📌 Best CLAHE parameter: `clipLimit(2) & tileGridSize(8,8)`
 
 ### CLAHE-HE
+1Step: `Clahe[cliplimit:2, tilegridsize: (8,8)]`
+
+2Step: `Histogram Equalization`
+
+
 
 ### HE-CLAHE
+1Step. `Histogram Equalization`
+
+2Step. `Clahe[cliplimit:2, tilegridsize: (8,8)]`
 
 ### CLAHE-HE-Unsharp Masking
