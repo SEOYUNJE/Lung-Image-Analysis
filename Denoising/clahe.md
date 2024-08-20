@@ -10,6 +10,7 @@
 
 2Step: `Histogram Equalization`
 
+![clahe-he](https://github.com/user-attachments/assets/c3f8fa4a-1da8-439d-adef-b121488291c7)
 
 
 ### HE-CLAHE
@@ -17,4 +18,7 @@
 
 2Step. `Clahe[cliplimit:2, tilegridsize: (8,8)]`
 
-### CLAHE-HE-Unsharp Masking
+![he-clahe](https://github.com/user-attachments/assets/2a517a9a-3415-4b89-9e97-a37bc85f8d90)
+
+
+### CLAHE-Unsharp Masking
