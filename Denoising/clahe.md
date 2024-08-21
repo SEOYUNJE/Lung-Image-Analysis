@@ -5,6 +5,11 @@
 
 📌 Best CLAHE parameter: `clipLimit(2) & tileGridSize(8,8)`
 
+- Accuracy: 0.6847
+- F1 Score: 0.6815
+- Test Accuracy: 0.66
+- Test F1 Score: 0.6658
+
 ### CLAHE-HE
 1Step: `Clahe[cliplimit:2, tilegridsize: (8,8)]`
 
