@@ -27,7 +27,7 @@
   
   => albumentations.XYMasking(**params, p=None)
 - `Channel Dropout`: albumentations.ChannelDropout(channel_drop_range=(1, 1), p=None)
-- `Grid Dropout`: 
+
 
 ### Strong Augmentation
 
