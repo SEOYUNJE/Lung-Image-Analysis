@@ -75,3 +75,7 @@
                 img_batch[i,cut_y:cut_y+cut_height,cut_x:cut_x+cut_width,:] = img_batch[j,cut_y:cut_y+cut_height, cut_x:cut_x+cut_width,:]
         
         return img_batch
+
+## Custom Augmentation
+
+`Needle Augmentation`: https://www.kaggle.com/seoyunje/needle-augmentation
