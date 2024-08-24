@@ -31,6 +31,40 @@
 
 ### Strong Augmentation
 
-`Mixup`
+`Mixup`:
 
-`CutMix`
+    def __augment2(self, img_batch, mixup_prob=0.1):
+        batch_size, height, width, channels = img_batch.shape
+
+        idx = np.random.permutation(batch_size)
+        lam = np.random.beta(2.0, 2.0) 
+        
+        for i in range(batch_size):
+            if np.random.rand() <= mixup_prob:  
+                j = idx[i]
+            
+                img_batch[i] = img_batch[i] * lam + img_batch[j] * (1-lam)
+        
+        return img_batch
+
+
+`CutMix`:
+
+     def __augment2(self, img_batch, cutmix_prob=0.5):
+        batch_size, height, width, channels = img_batch.shape
+
+        idx = np.random.permutation(batch_size)
+        lam = np.random.beta(0.5, 0.5) 
+        
+        for i in range(batch_size):
+            if np.random.rand() <= cutmix_prob:  
+                j = idx[i]
+    
+                cut_width = min(int(width * lam), 50)
+                cut_height = min(int(height * lam), 50)
+                cut_x = np.random.randint(0, width-cut_width+1)
+                cut_y = np.random.randint(0, height-cut_height+1)
+            
+                img_batch[i,cut_y:cut_y+cut_height,cut_x:cut_x+cut_width,:] = img_batch[j,cut_y:cut_y+cut_height, cut_x:cut_x+cut_width,:]
+        
+        return img_batch
