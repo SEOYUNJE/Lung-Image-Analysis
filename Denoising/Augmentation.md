@@ -12,6 +12,13 @@
 **Rotate**
 - `Rotate`: albumentations.Rotate(limit=None, p=None)
 
+**Shear**
+- `Shear`: albumentations.Affine(shear=None, p=None)
+- `Shift`: albumentations.ShiftScaleRotate(shift_limit=None, scale_limit=None, rotate_limit=None, p=None),
+
+**Cropped**
+- `Crop`: albumentations.RandomResizedCrop(height=None, width=None, scale=(None, None), ratio=(None, None))
+
 **Dropout**
 - `CoarseDropout`: albumentations.CoarseDropout(max_holes=None, max_height=None, max_width=None, min_holes=None, 
                   min_height=None, min_width=None, fill_value=None, p=None)
