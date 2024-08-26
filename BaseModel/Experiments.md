@@ -63,7 +63,7 @@
          for i, (_, valid_index) in enumerate(gkf.split(df_train, df_train['Finding Labels'], groups=df_train['Patient ID'])):
             df_train.loc[valid_index, 'Fold'] = i
 
-      - StratifiedKFold
+      - StratifiedGroupKFold
    
           from sklearn.model_selection import StratifiedGroupKFold    
 
