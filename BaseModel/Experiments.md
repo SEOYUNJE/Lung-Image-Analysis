@@ -20,8 +20,37 @@
      - 0.05
      - 0.1
      - 0.2
+3. `Custom Augmentation`:
 
-3. `Cross Validation`
+   **Needle Augmentation**
+   kaggle 주소: https://www.kaggle.com/code/seoyunje/needle-augmentation/input
+
+   => od.download('https://www.kaggle.com/code/seoyunje/needle-augmentation/input')
+
+   **Numerous CutMix**
+   => num_patches=1이면 cutmix 한번 적용된 걸로 기본 cutmix랑 동일
+   => 단, num_patches의 값을 1이 아닌 2~4로 하게 될 경우 여러 개의 cutmix가 적용됨
+   
+        def __augment2(self, img_batch, mask_batch, cutmix_prob=0.5, num_patches=4):
+             batch_size, height, width, channels = img_batch.shape
+
+             for i in range(batch_size):
+                  if np.random.rand() <= cutmix_prob:  
+                  for _ in range(num_patches):  # 여러 개의 패치를 적용하기 위해 반복문 추가
+                       idx = np.random.randint(batch_size)
+                       lam = np.random.beta(0.5, 0.5)
+                
+                       cut_width = min(int(width * lam), 50)
+                       cut_height = min(int(height * lam), 50)
+                       cut_x = np.random.randint(0, width - cut_width + 1)
+                       cut_y = np.random.randint(0, height - cut_height + 1)
+
+                       img_batch[i, cut_y:cut_y + cut_height, cut_x:cut_x + cut_width, :] = img_batch[idx, cut_y:cut_y + cut_height, cut_x:cut_x + cut_width, :]
+                       mask_batch[i, cut_y:cut_y + cut_height, cut_x:cut_x + cut_width, :] = mask_batch[idx, cut_y:cut_y + cut_height, cut_x:cut_x + cut_width, :]
+
+            return img_batch, mask_batch
+
+5. `Cross Validation`
      - 현재 cross validation: SKF
        
         skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
@@ -42,7 +71,7 @@
           for i, (_, valid_index) in enumerate(sgkf.split(df_train, df_train['Finding Labels'], groups=df_train['Patient ID'])):
              df_train.loc[valid_index, 'Fold'] = i
 
-4. `Loss`
+6. `Loss`
 
      - **tf.keras.losses.CategoricalCrossentropy(label_smoothing=None)**
      - **tf.keras.losses.CategoricalFocalCrossentropy(alpha=None, gamma=None, label_smoothing=None)**
