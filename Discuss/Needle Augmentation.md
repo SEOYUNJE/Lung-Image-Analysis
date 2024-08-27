@@ -1,11 +1,10 @@
 # Needle Augmentation
 
-
 ## 0) 코드 관련 설정
 
 ![스크린샷 2024-08-27 232524](https://github.com/user-attachments/assets/50cf36fa-b134-461d-bdb2-460c9a33624f)
 
-왼쪽 코드는 "Dark Needles=True"에서는 문제없이 작동되었지만 "Dark Needles=False"에서는 작동하지 않았음.
+왼쪽 코드는 "Dark Needles=True"에서는 문제없이 작동되었지만 "Dark Needles=False"에서는 작동하지 않았음.  
 그래서 "Dark Needles=False" 실험할 때는 오른쪽 코드로 바꿔서 진행했음.
 
 
