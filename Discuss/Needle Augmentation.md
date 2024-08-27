@@ -1,13 +1,13 @@
 # Needle Augmentation
 
 
-## 코드 관련 설정
+## 0) 코드 관련 설정
 <img width="983" alt="스크린샷 2024-08-27 232524" src="https://github.com/user-attachments/assets/50cf36fa-b134-461d-bdb2-460c9a33624f">
-- 왼쪽 코드는 Dark Needles=True에서는 문제없이 작동되었지만 Dark Needles=False에서는 작동하지 않았음
-- 그래서 Dark Needles=False 실험할 때는 오른쪽 코드로 바꿔서 진행했음
+#### 왼쪽 코드는 Dark Needles=True에서는 문제없이 작동되었지만 Dark Needles=False에서는 작동하지 않았음.
+#### 그래서 Dark Needles=False 실험할 때는 오른쪽 코드로 바꿔서 진행했음
 
 
-## 실험결과
+## 1) 실험결과
 
 - 기본 세팅 : 13번 모두 augment1 미적용, augment 2 미적용 한 상태로 진행하였음
 
@@ -36,7 +36,7 @@
 - Augmentation Probability: 1.0
 
 
-## Needle Augmentation 결과 분석
+## 2) Needle Augmentation 결과 분석
 
 ### 1. Needle 개수의 영향
 - 바늘 개수 줄어들수록 성능 향상되는 경향 있었음
