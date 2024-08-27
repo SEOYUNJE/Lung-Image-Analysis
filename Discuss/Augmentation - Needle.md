@@ -1,5 +1,7 @@
 # Needle Augmentation
 
+![output](https://github.com/user-attachments/assets/73f83e2b-e4da-412b-a12a-e8709198b4d8)
+
 ## 0) 코드 관련 설정
 
 ![스크린샷 2024-08-27 232524](https://github.com/user-attachments/assets/50cf36fa-b134-461d-bdb2-460c9a33624f)
