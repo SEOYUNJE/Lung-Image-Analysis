@@ -84,6 +84,21 @@
   
      - **F1 Loss(Custom Loss, tf.keras.losses에서 지원하지 않는 함수)**
   
+       
+           def f1_loss(y_true, y_pred):
+       
+              tp = K.sum(y_true * y_pred, axis=0)
+              fp = K.sum((1 - y_true) * y_pred, axis=0)
+              fn = K.sum(y_true * (1 - y_pred), axis=0)
+              precision = tp / (tp + fp + K.epsilon())
+              recall = tp / (tp + fn + K.epsilon())
+
+              f1 = 2 * (precision * recall) / (precision + recall + K.epsilon())
+              f1 = tf.where(tf.math.is_nan(f1), tf.zeros_like(f1), f1)
+    
+              macro_f1_score = K.mean(f1)
+              return 1 - macro_f1_score
+       
    <Correlation with Macro F1 Score Metric & Loss Function>
    
         cce = tf.keras.losses.categorical_crossentropy(all_true, all_oof)
