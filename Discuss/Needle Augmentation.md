@@ -1,5 +1,12 @@
 # Needle Augmentation
 
+
+## 코드 관련 설정
+<img width="983" alt="스크린샷 2024-08-27 232524" src="https://github.com/user-attachments/assets/50cf36fa-b134-461d-bdb2-460c9a33624f">
+
+
+## 실험결과
+
 - 기본 세팅 : 13번 모두 augment1 미적용, augment 2 미적용 한 상태로 진행하였음
 
 | optimizer | Runtime | needle_type | needle_numbers | needle_prob | final_test_accuracy | final_test_f1_score | final_train_accuracy | final_train_f1_score | train_accuracy | train_f1 | val_accuracy | val_f1 | val_loss | train_loss |
@@ -27,7 +34,7 @@
 - Augmentation Probability: 1.0
 
 
-# Needle Augmentation 결과 분석
+## Needle Augmentation 결과 분석
 
 ### 1. Needle 개수의 영향
 - 바늘 개수 줄어들수록 성능 향상되는 경향 있었음
