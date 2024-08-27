@@ -1,5 +1,8 @@
 # Needle Augmentation
 
+
+- 기본 세팅 : 13번 모두 augment1 미적용, augment 2 미적용 한 상태로 진행하였음
+
 | optimizer | Runtime | needle_type | needle_numbers | needle_prob | final_test_accuracy | final_test_f1_score | final_train_accuracy | final_train_f1_score | train_accuracy | train_f1 | val_accuracy | val_f1 | val_loss | train_loss |
 |-----------|---------|-------------|----------------|-------------|---------------------|---------------------|----------------------|----------------------|----------------|----------|--------------|--------|----------|------------|
 | adam | 01:28:55 | Gray | 10 | 1.0 | 0.501 | 0.469 | 0.540 | 0.509 | 0.604 | 0.376 | 0.558 | 0.399 | 1.640 | 1.545 |
