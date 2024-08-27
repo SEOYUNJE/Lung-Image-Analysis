@@ -29,6 +29,9 @@
 | adam | 00:19:35 | NONE | 　 | 　 | 0.649 | 0.658 | 0.682 | 0.677 | 0.790 | 0.510 | 0.717 | 0.572 | 1.380 | 1.277 |
 
 <img width="967" alt="스크린샷 2024-08-27 230027" src="https://github.com/user-attachments/assets/9f6c9092-7104-442f-b483-1bcb7b7a8c5e">
+
+
+
 ![W B Chart 2024  8  27  오후 11_37_43](https://github.com/user-attachments/assets/93145c24-af42-4611-93e7-662569a49b32)
 
 
