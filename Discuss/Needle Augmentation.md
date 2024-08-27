@@ -1,6 +1,5 @@
 # Needle Augmentation
 
-
 - 기본 세팅 : 13번 모두 augment1 미적용, augment 2 미적용 한 상태로 진행하였음
 
 | optimizer | Runtime | needle_type | needle_numbers | needle_prob | final_test_accuracy | final_test_f1_score | final_train_accuracy | final_train_f1_score | train_accuracy | train_f1 | val_accuracy | val_f1 | val_loss | train_loss |
@@ -21,6 +20,11 @@
 
 <img width="967" alt="스크린샷 2024-08-27 230027" src="https://github.com/user-attachments/assets/9f6c9092-7104-442f-b483-1bcb7b7a8c5e">
 
+![Needle](https://github.com/user-attachments/assets/d2731eb6-22c3-47da-91c1-82797cc39b1e)
+#### 파라미터
+- 바늘 종류: Dark | Gray
+- 바늘 개수: 1,2,3,4,5,10
+- Augmentation Probability: 1.0
 
 
 # Needle Augmentation 결과 분석
@@ -58,8 +62,3 @@
 - 증강 없는 경우와 성능 차이 미미해 증강 효과가 제한적일 수 있음
 - 향후 다른 증강 기법, 모델 개선, 추가 데이터 수집 등 고려 필요함
 
-![Needle](https://github.com/user-attachments/assets/d2731eb6-22c3-47da-91c1-82797cc39b1e)
-#### 파라미터
-- 바늘 종류: Dark | Gray
-- 바늘 개수: 1,2,3,4,5,10
-- Augmentation Probability: 1.0
