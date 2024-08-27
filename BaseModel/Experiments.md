@@ -71,7 +71,7 @@
           for i, (_, valid_index) in enumerate(sgkf.split(df_train, df_train['Finding Labels'], groups=df_train['Patient ID'])):
              df_train.loc[valid_index, 'Fold'] = i
 
-6. `Loss`
+6. `Best Loss Function for Macro F1-Score Metric`
 
      - **tf.keras.losses.CategoricalCrossentropy(label_smoothing=None)**
      - **tf.keras.losses.CategoricalFocalCrossentropy(alpha=None, gamma=None, label_smoothing=None)**
@@ -83,4 +83,17 @@
      => 다만 (1,0,0) 이처럼 1,0으로만 되어 있으면 kldivergene 수식에 의하여 loss값이 너무 커지기 때문에 label smoothing을 진행해야 한다. 이때 따로 kldivergence에는 label_smooting이 없고 One Hot Encoding Part에서 수정해야 한다.
   
      - **F1 Loss(Custom Loss, tf.keras.losses에서 지원하지 않는 함수)**
+  
+   <Correlation with Macro F1 Score Metric & Loss Function>
+   
+        cce = tf.keras.losses.categorical_crossentropy(all_true, all_oof)
+        macro_f1 = f1(all_true, all_oof)
+
+        plt.figure(figsize=(12,6))
+
+        plt.scatter(cce,macro_f1)
+        plt.xlabel('CCE Loss')
+        plt.ylabel('Macro F1-Score')
+        plt.show()
+   ![](https://www.kaggleusercontent.com/kf/6633544/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..D5KoCQhi8-w3e_8BTQkUkA.chRhxjql1202i3rAizObtWKRothpvDJbBSzZdeTJy2bcB_qIYo-AZUdMWbCSp_CFVKWiaoSJU47kEopsPbpkaE4vFUKNPrhB8CGL8KKgtybgHdLGm_C68zW27fP-Qx2Mq7fiBisLax-Ka-a94O4QrHMwJGG0XdOZ31SoM9jIaDKk5jAseidHYfgKy2pUnzNMQGpLNb8UHTFDVEhq5k4SYCt7FikN-xMp6q1OrJFaKvyWyEpDRu5r_ydtIY3aoi1JNOkHFdJgfNGJGpHWaOxQrG0Dw1FI9vyczMAv5WEi-77en1L3JpNHD6o1nWRnr6mzuoeLiVsaV4HqRtbgmjelS9g0JlYowi9o7ri4TyIoFxTQB09_dQDvg78WIZNcvCNApZ5PKbVp1x_zcOXAv2Bi07VLnLcVOvSttWSqqoPw1kcdRNr5HuQrVFa3-mFL8m_KTJIrjGZJWRsMlLOMZeMJU45oPmtLiHuu18C1yB3oLOZSgwtwekjOTe3Zf1n1kYoNCT-HrgcCIDVNKeLpRUo9V5MpVBmEfBPmA8vrTpf7Wuy4cEWcg2l-23jAMGmiU2wRP6oY_fnlVCVbRzcQABlncbk7U8Gf-ahY1vg8bUoeRSIRfteCMyNoOZwYrSM6UOjR3qpww7rhiCxuQXswcbSe3W0wzDs4fsYiVL6GbjEzi80.nSZgn_ylEhxCKkxH3GZCAQ/__results___files/__results___14_0.png)
        
