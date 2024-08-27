@@ -53,3 +53,7 @@
 - 향후 다른 증강 기법, 모델 개선, 추가 데이터 수집 등 고려 필요함
 
 ![Needle](https://github.com/user-attachments/assets/d2731eb6-22c3-47da-91c1-82797cc39b1e)
+#### 파라미터
+- 바늘 종류: Dark | Gray
+- 바늘 개수: 1,2,3,4,5,10
+- Augmentation Probability: 1.0
