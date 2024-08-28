@@ -26,14 +26,14 @@
    https://github.com/SEOYUNJE/Lung-Image-Analysis/blob/main/Denoising/needle-augmentation.ipynb
    
    => Dataset:
-   od.download('https://www.kaggle.com/code/seoyunje/needle-augmentation/input')
+   od.download('https://www.kaggle.com/datasets/seoyunje/xray-needle-augmentation')
 
    
    **Line Augmentation**
    https://github.com/SEOYUNJE/Lung-Image-Analysis/blob/main/Denoising/line-augmentation.ipynb
    
    => Dataset:
-   od.download('https://www.kaggle.com/datasets/seoyunje/xray-line-augmentation/settings')
+   od.download('https://www.kaggle.com/datasets/seoyunje/xray-line-augmentation')
 
    **Numerous CutMix**
    => num_patches=1이면 cutmix 한번 적용된 걸로 기본 cutmix랑 동일
