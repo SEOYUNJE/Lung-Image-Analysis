@@ -23,11 +23,15 @@
 3. `Custom Augmentation`:
 
    **Needle Augmentation**
+   https://github.com/SEOYUNJE/Lung-Image-Analysis/blob/main/Denoising/needle-augmentation.ipynb
+   
    => Dataset:
    od.download('https://www.kaggle.com/code/seoyunje/needle-augmentation/input')
 
    
    **Line Augmentation**
+   https://github.com/SEOYUNJE/Lung-Image-Analysis/blob/main/Denoising/line-augmentation.ipynb
+   
    => Dataset:
    od.download('https://www.kaggle.com/datasets/seoyunje/xray-line-augmentation/settings')
 
