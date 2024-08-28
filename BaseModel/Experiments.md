@@ -23,9 +23,13 @@
 3. `Custom Augmentation`:
 
    **Needle Augmentation**
-   kaggle 주소: https://www.kaggle.com/code/seoyunje/needle-augmentation/input
+   => Dataset:
+   od.download('https://www.kaggle.com/code/seoyunje/needle-augmentation/input')
 
-   => od.download('https://www.kaggle.com/code/seoyunje/needle-augmentation/input')
+   
+   **Line Augmentation**
+   => Dataset:
+   od.download('https://www.kaggle.com/datasets/seoyunje/xray-line-augmentation/settings')
 
    **Numerous CutMix**
    => num_patches=1이면 cutmix 한번 적용된 걸로 기본 cutmix랑 동일
