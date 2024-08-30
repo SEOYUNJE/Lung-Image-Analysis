@@ -1,4 +1,5 @@
 # 미완
+# 1. Focal Loss Crossentropy
 
 ## 1) 변수 설정 코드 부분
 loss = tf.keras.losses.CategoricalFocalCrossentropy(alpha=alpha_setting, gamma=gamma_setting, label_smoothing=0)
