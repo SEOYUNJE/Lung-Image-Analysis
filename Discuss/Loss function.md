@@ -1,5 +1,8 @@
 # 미완
 
+## 1) 변수 설정 코드 부분
+loss = tf.keras.losses.CategoricalFocalCrossentropy(alpha=alpha_setting, gamma=gamma_setting, label_smoothing=0)
+
 ```
 def build_model():
     inp = tf.keras.layers.Input(shape=(256,256,3))
@@ -24,6 +27,5 @@ def build_model():
 
     return model
 ```
-
 
 ![image](https://github.com/user-attachments/assets/812d8a73-00b4-4ace-9d6e-c3fb8b1c50e1)
