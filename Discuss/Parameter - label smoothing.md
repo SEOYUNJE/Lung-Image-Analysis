@@ -24,21 +24,18 @@
 1. **Label Smoothing**: 
    - 값의 범위: 0.05에서 0.5까지 변화
 
-2. **데이터 증강**: 
-   - 모든 실험에서 Hflip(0.5) 사용 (50% 확률로 이미지를 수평으로 뒤집는 기법)
-
-3. **정확도(Accuracy)와 F1 점수**:
+2. **정확도(Accuracy)와 F1 점수**:
    - TEST 데이터셋: Label Smoothing 0.15에서 최고 성능 (Accuracy: 0.6622, F1: 0.6698)
    - TRAIN 데이터셋: Label Smoothing 0.4에서 최고 성능 (Accuracy: 0.7125, F1: 0.7130)
 
-4. **Cross-Entropy Error (CEE)**:
+3. **Cross-Entropy Error (CEE)**:
    - TEST 데이터셋: Label Smoothing 증가에 따라 CEE도 대체로 증가
    - TRAIN 데이터셋: 비슷한 경향이나 변동 존재
 
-5. **Expected Calibration Error (ECE)**:
+4. **Expected Calibration Error (ECE)**:
    - 제한된 데이터지만, Label Smoothing 증가에 따라 ECE도 증가하는 경향
 
-6. **과적합(Overfitting) 징후**:
+5. **과적합(Overfitting) 징후**:
    - 낮은 Label Smoothing: TRAIN 성능이 TEST보다 훨씬 높음
    - Label Smoothing 증가: 이 차이가 점차 감소
 
