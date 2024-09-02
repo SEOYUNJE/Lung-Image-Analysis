@@ -22,3 +22,8 @@
 
 
 ![low high mask](https://github.com/user-attachments/assets/bdc0c167-ac0f-4878-a8e3-426e039f3533)
+
+## Experiment 4: RGB SuperPosition
+
+![rgb supoerposition](https://github.com/user-attachments/assets/780fd864-bdc5-4746-bee1-a9829bf8bd4d)
+
