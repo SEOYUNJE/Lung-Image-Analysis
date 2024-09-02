@@ -1,6 +1,8 @@
 ## Label Smoothing
 
 <img src="https://github.com/user-attachments/assets/7840d054-10b9-461d-af4a-93a1b6d6caf9" width="500" height="300" alt="SVG 이미지">
+
+
 | Label Smoothing | Augmentation | TEST ||||  TRAIN ||||
 |-----------------|--------------|------|------|------|------|------|------|------|------|
 |                 |              | Accuracy | F1 | CEE | ECE | Accuracy | F1 | CEE | ECE |
