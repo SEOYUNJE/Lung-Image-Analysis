@@ -1,7 +1,5 @@
 ## Label Smoothing
 
-<img src="https://github.com/user-attachments/assets/0665da1e-c7d6-49de-b194-cef36e5a48e1" width="500" height="300" alt="SVG 이미지">
-
 | Label Smoothing | Augmentation | TEST ||||  TRAIN ||||
 |-----------------|--------------|------|------|------|------|------|------|------|------|
 |                 |              | Accuracy | F1 | CEE | ECE | Accuracy | F1 | CEE | ECE |
@@ -28,6 +26,7 @@
 | 0.35-2 | Hflip(0.5) | 0.6544 | 0.6615 | 1.1522 | 0.1811 | 0.6694 | 0.6691 | 1.1167 | 0.1876 |
 | 0.40-2 | Hflip(0.5) | 0.6322 | 0.6417 | 1.2221 | 0.17 | 0.6958 | 0.6998 | 1.1336 | 0.2146 |
 
+<img src="https://github.com/user-attachments/assets/0665da1e-c7d6-49de-b194-cef36e5a48e1" width="500" height="300" alt="SVG 이미지">
 
 ![image](https://github.com/user-attachments/assets/8f0d3d26-d42c-432b-bf2e-75ebce4d2bba)
 
