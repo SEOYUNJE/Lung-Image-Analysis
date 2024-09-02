@@ -1,6 +1,6 @@
 ## Label Smoothing
 
-<img width="542" alt="스크린샷 2024-08-31 224842" src="https://github.com/user-attachments/assets/513eb12e-cb2c-463b-974d-ec438e42c5bf">
+![image](https://github.com/user-attachments/assets/7840d054-10b9-461d-af4a-93a1b6d6caf9)
 
 | Label Smoothing | Augmentation | TEST ||||  TRAIN ||||
 |-----------------|--------------|------|------|------|------|------|------|------|------|
@@ -27,9 +27,6 @@
 | 0.30-2 | Hflip(0.5) | 0.6478 | 0.6537 | 1.1299 | 0.1237 | 0.6958 | 0.6971 | 1.0656 | 0.1639 |
 | 0.35-2 | Hflip(0.5) | 0.6544 | 0.6615 | 1.1522 | 0.1811 | 0.6694 | 0.6691 | 1.1167 | 0.1876 |
 | 0.40-2 | Hflip(0.5) | 0.6322 | 0.6417 | 1.2221 | 0.17 | 0.6958 | 0.6998 | 1.1336 | 0.2146 |
-
-
-![image](https://github.com/user-attachments/assets/9a06b631-5705-42fb-b25c-277c3b562546)
 
 
 ![image](https://github.com/user-attachments/assets/8f0d3d26-d42c-432b-bf2e-75ebce4d2bba)
