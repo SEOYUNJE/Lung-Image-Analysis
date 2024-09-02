@@ -18,6 +18,7 @@
 
 
 
-## Experiment 3: RGB SuperPosition(RGB 채널 중첩)
+## Experiment 3: Simple Attention
 
-![rgb supoerposition](https://github.com/user-attachments/assets/23941c14-87d2-43e6-b5fa-87755d280d37)
+
+![low high mask](https://github.com/user-attachments/assets/bdc0c167-ac0f-4878-a8e3-426e039f3533)
