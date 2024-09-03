@@ -18,11 +18,11 @@ Our proposed resizer architecture is shown in below figure.
 
 ## Examples in Chest X-Ray Images
 
-#### Example 1
+#### 📌 Example 1
 ![ressize1](https://github.com/user-attachments/assets/05c213ab-44b1-4ae7-93bb-c07964177f80)
 
 ___ 
-#### Example 2
+#### 📌 Example 2
 ![resize2](https://github.com/user-attachments/assets/ff149c2c-c008-452d-8465-08db24e4144b)
 
 
