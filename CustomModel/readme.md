@@ -35,3 +35,9 @@
 - Loss: `CategoricalCrossentropy`
 - Dropout: None
 - Optimizer: `Adam`
+
+## Model3. Hierarchy Multi Label Classification(HMC)
+
+![hmc1](https://github.com/user-attachments/assets/ff3c420a-3ba3-4f34-811f-d313579ec4e1)
+
+
