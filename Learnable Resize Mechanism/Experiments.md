@@ -1,5 +1,6 @@
 ### Experiment 1: `Num_Res_Block`
-![image](https://github.com/user-attachments/assets/4179811e-5e7f-4765-8032-7e16b0269619)
+
+![res block2](https://github.com/user-attachments/assets/d4abe07d-e121-4429-918f-49b5c74531df)
 
 
 ### Experiment 2: `Filters`
