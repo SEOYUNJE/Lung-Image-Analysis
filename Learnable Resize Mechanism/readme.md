@@ -18,10 +18,12 @@ Our proposed resizer architecture is shown in below figure.
 
 ## Examples in Chest X-Ray Images
 
-Resized Size = `224, 224`
-Interpolation = `bilinear`
+#### Example 1
+![ressize1](https://github.com/user-attachments/assets/05c213ab-44b1-4ae7-93bb-c07964177f80)
 
-![](https://www.kaggleusercontent.com/kf/190526475/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..mTC_YwaldO5o4PWZe6vI8g.24zgvITvID73edf6LLUU6Af8ZSuAtODkfnBA8qYGJOabDg_uovWR73lE4ch381-BNRixM5o3WGzT8GePSJgGe8kK_8_KmWG9jXwFXzGvTf8sqoejnC3o9St6SgVqdj8Q6hod_pMffCy_bNTCN6Gkl1qabCRg2UMVuc0u3yaUkc82Ccs6QD5kiZ-4htyoSLv9c88Q0e-2xQjBHfhI695MCCpC0_IoHyNAMy_Rv0AFFH8MuDcqmZOgJtLpfdUliuG3buEDGOd0NnuSmtIjuwgEUKEOzBqYaIyLJzzcErEyHkTS5IZTib_YFOYF-3U4XZRVuODD7NIpb8miYDBDzpkYeni9i3FpS8_BBJuNF3Sbar9eZgMKYH78v6N8lWmk16cvQOxGSz2bsLpyWCZ-Zzwi58-qs6AVrsT3bqz03XglzveDs4j4z4F10alR4c-4ToKi2_t1VdbD2ifUgw-i6_AouMLvYdMcdSriYBxybcLQncbRlAUh0Ufc8r0qqwdOpfTMeRL5xzumNwpfbjQnDySbfwOh2DFsdgQespKXU67v9A97WOfpEuFyB9t3vmhBLCGer_QLdUQhB_HGr_fRCzRARqGkztNcpzgJKWtnFMcH1maITtV-_289FBS08CaY71cpWnOLJnivm6kxs5_DbeWyxl8HVftlh3w7ibifNEHFXGg.8XIxLzGYVSH0WstO5aDi7A/__results___files/__results___41_0.png)
+___ 
+#### Example 2
+![resize2](https://github.com/user-attachments/assets/ff149c2c-c008-452d-8465-08db24e4144b)
 
 
 
