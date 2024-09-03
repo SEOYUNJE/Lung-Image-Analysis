@@ -43,7 +43,7 @@ Chest X-ray (CXR) imaging is a fundamental diagnostic tool in medical practice, 
 There are 10classes(9 diseases, and one for "No Findings")
 
 
-Here is **Modified Dataset** from NIH Dataset(For Speeding up, select only 300 data in each label)
+Here is **[CXR 10 Dataset](https://www.kaggle.com/datasets/seoyunje/cxr-10-dataset)** from NIH Dataset(For Speeding up, select only 300 data in each label)
 
   | Finding Labels       | Count |
   |----------------------|-------|
