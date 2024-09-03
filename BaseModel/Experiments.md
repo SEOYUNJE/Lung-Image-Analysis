@@ -6,10 +6,12 @@
    - 512 X 512
    - 786 X 786
    - 1024 X 1024
-  
-     ![imgsi](https://github.com/user-attachments/assets/935a9d6f-66a6-41e4-9787-a19c67e02dbd)
 
-2. `Label Smoothing`
+    ![image](https://github.com/user-attachments/assets/1810b2dd-efe0-4c3d-ac76-b13b31b569ea)
+
+    
+
+3. `Label Smoothing`
    
     loss = losses.CategoricalCrossentropy(`label_smoothing`=0.2)
     
@@ -20,7 +22,7 @@
      - 0.05
      - 0.1
      - 0.2
-3. `Custom Augmentation`:
+4. `Custom Augmentation`:
 
    **Needle Augmentation**
    https://github.com/SEOYUNJE/Lung-Image-Analysis/blob/main/Denoising/needle-augmentation.ipynb
