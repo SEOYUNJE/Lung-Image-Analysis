@@ -43,24 +43,24 @@ Chest X-ray (CXR) imaging is a fundamental diagnostic tool in medical practice, 
 There are 10classes(9 diseases, and one for "No Findings")
 
 
-Here is **[CXR 10 Dataset](https://www.kaggle.com/datasets/seoyunje/cxr-10-dataset)** from NIH Dataset(For Speeding up, select only 300 data in each label)
+Here is **[Rapid CXR Dataset](https://www.kaggle.com/datasets/seoyunje/rapid-cxr-dataset)**
 
   | Finding Labels       | Count |
   |----------------------|-------|
-  | No Finding           | 300   |
-  | Cardiomegaly         | 300   |
-  | Edema                | 300   |
-  | Consolidation        | 300   |
-  | Atelectasis          | 300   |
-  | Pneumonia            | 300   |
-  | Effusion             | 300   |
-  | Pneumothorax         | 300   |
-  | Pleural Thickening   | 300   |
-  | Emphysema            | 300   |
+  | No Finding           | 500   |
+  | Edema                | 500   |
+  | Covid                | 500   |
+  | Atelectasis          | 500   |
+  | Pneumonia            | 500   |
+  | Effusion             | 500   |
+  | Pneumothorax         | 500   |
+  | Tuberculosis         | 393   |
+  | Emphysema            | 500   |
 
 
 => The image below is a diagram of hierarchical medical data.
 
-![dataset](https://github.com/user-attachments/assets/69f94137-e0e1-406e-966e-39f218fa9990)
+![dataset](https://github.com/user-attachments/assets/f99b32e3-61aa-4b4a-8281-b091238b948e)
+
 
 
