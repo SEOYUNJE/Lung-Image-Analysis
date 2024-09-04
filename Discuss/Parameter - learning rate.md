@@ -4,7 +4,7 @@
 - train_batch_setting: 16
 - valid_batch_setting: 32
 - test_batch_setting: 64
-- fold_num_setting: 1
+- fold_num_setting: 1(in 5folds)
 - LABEL = [['Edema','No Finding', 'Pneumonia', 'Tuberculosis', 'Pneumothorax', 'Emphysema', 'Covid', 'Effusion', 'Atelectasis']
 
 - Preprocess: (CLAHE: None)
