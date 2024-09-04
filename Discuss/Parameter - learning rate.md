@@ -1,5 +1,5 @@
 - sample_num_setting: 500
-- epoch_setting: 15 / 15
+- epoch_setting: 15 / 10
 - label_smoothing_setting: 0.15
 - train_batch_setting: 16
 - valid_batch_setting: 32
