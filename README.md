@@ -61,6 +61,6 @@ Here is **[CXR 10 Dataset](https://www.kaggle.com/datasets/seoyunje/cxr-10-datas
 
 => The image below is a diagram of hierarchical medical data.
 
-![dataset](https://github.com/user-attachments/assets/f47ed564-a3d2-46c4-b329-e4d1674db36c)
+![dataset](https://github.com/user-attachments/assets/69f94137-e0e1-406e-966e-39f218fa9990)
 
 
