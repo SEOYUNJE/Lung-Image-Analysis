@@ -1,3 +1,6 @@
+# v28 Horizontal Flip
+- 효과 없음
+
 | HorizontalFlip(p) | train_results.accuracy | train_results.f1 | test_results.accuracy | test_results.f1 |
 |:-----------------:|:----------------------:|:----------------:|:---------------------:|:---------------:|
 | 0.0 | 0.6708 | 0.6661 | 0.6622 | 0.6690 |
