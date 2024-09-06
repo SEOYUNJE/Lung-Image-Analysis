@@ -43,4 +43,5 @@ Maximum value: 72.00%
 ```
 
 
-# v18 Edge Mixup
+## 예시 배치 [1.0, 0.2, 20]
+![image](https://github.com/user-attachments/assets/bc92e73c-168b-4cf2-8b0f-4b09a7db397b)
