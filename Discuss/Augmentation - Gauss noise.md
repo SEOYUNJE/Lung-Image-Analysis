@@ -29,4 +29,4 @@ Base value for all bars: 64.00%
 ![image](https://github.com/user-attachments/assets/60c55a82-ab25-4d25-9511-af9abe60330f)
 
 
-![image](https://github.com/user-attachments/assets/c86dcb8f-e2fa-4bcd-9e23-c97aa1dfee3d)
+![image](https://github.com/user-attachments/assets/a03beb6f-0423-41e7-86a4-22f5aa20038f)
