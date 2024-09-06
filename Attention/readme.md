@@ -8,3 +8,8 @@ In one of our experiments, we've tried on the CBAM mechanism and modified the en
 
 
 ![](https://user-images.githubusercontent.com/17668390/101244752-60fcba00-3732-11eb-903f-68be38272cf7.png)
+
+
+#### 2. Triplet Attention Module
+
+![](https://github.com/landskape-ai/triplet-attention/raw/master/figures/triplet.png)
