@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/62bfd758-47ce-4a1e-abed-c4af6cdd337b)![image](https://github.com/user-attachments/assets/4dcc44ac-34fc-4bfc-96ef-87494c8779f6)# v17,v18 Edge Mixup
+# v17,v18 Edge Mixup
 - train은 p가 올라갈수록 정확도가 낮아지지만 test 정확도에서는 증가를 보임.
 - 효과가 있기는 하지만 명확하게 효과가 있다고 보기는 어려움
 
