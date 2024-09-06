@@ -57,8 +57,11 @@ Version 35
                                   0.63                    0.65                    0.67                    0.69                    0.71
 ```
 
-#### train 배치 예시시 (-0.1, 0.1) (-0.2, 0.2) 0.5
+#### train 배치 예시
+- (-0.1, 0.1) (-0.2, 0.2) 0.5
 ![image](https://github.com/user-attachments/assets/b4a92361-4f6d-4d72-a772-3afd53c0d8b9)
+- (-0.3, 0.3) (-0.3, 0.3) 0.5
+![image](https://github.com/user-attachments/assets/a36c45ab-8d3c-48b3-871e-f15b7e4bce0a)
 
 
 
