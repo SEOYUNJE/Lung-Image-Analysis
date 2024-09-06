@@ -1,4 +1,4 @@
-# v17,ㅍ18 Edge Mixup
+# v17,v18 Edge Mixup
 
 | Index | p | alpha | pixel | train_results.accuracy | train_results.f1 | test_results.accuracy | test_results.f1 |
 |:-----:|:--:|:-----:|:-----:|:----------------------:|:----------------:|:---------------------:|:---------------:|
