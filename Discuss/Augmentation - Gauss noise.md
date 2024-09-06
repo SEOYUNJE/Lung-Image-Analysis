@@ -1,4 +1,4 @@
-미적용한 걸 실험따로 안했지만 일반적으론 (train acc, test acc)가 보통 (67~68%,63~64%) 정도 나옴
+미적용한 걸 실험따로 안했지만 일반적으론 (train acc, test acc)가 보통 (67-68%,63-64%) 정도 나옴
 
 v37
 | GaussNoise Parameters | train_results.accuracy | train_results.f1 | test_results.accuracy | test_results.f1 | Other Augmentations |
