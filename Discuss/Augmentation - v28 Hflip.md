@@ -1,11 +1,11 @@
-| HorizontalFlip(p) | train_results.accuracy | train_results.f1 | test_results.accuracy | test_results.f1 | Other Augmentations |
-|:-----------------:|:----------------------:|:----------------:|:---------------------:|:---------------:|:-------------------:|
-| 0.0 | 0.6708 | 0.6661 | 0.6622 | 0.6690 | Resize(p=1.0, height=256, width=256, interpolation=1) |
-| 0.0 | 0.6931 | 0.6916 | 0.6644 | 0.6749 | Resize(p=1.0, height=256, width=256, interpolation=1) |
-| 0.2 | 0.6597 | 0.6528 | 0.6433 | 0.6518 | Resize(p=1.0, height=256, width=256, interpolation=1) |
-| 0.5 | 0.6153 | 0.6076 | 0.6200 | 0.6260 | Resize(p=1.0, height=256, width=256, interpolation=1) |
-| 0.7 | 0.6778 | 0.6755 | 0.6489 | 0.6539 | Resize(p=1.0, height=256, width=256, interpolation=1) |
-| 1.0 | 0.5694 | 0.5398 | 0.5289 | 0.4933 | Resize(p=1.0, height=256, width=256, interpolation=1) |
+| HorizontalFlip(p) | train_results.accuracy | train_results.f1 | test_results.accuracy | test_results.f1 |
+|:-----------------:|:----------------------:|:----------------:|:---------------------:|:---------------:|
+| 0.0 | 0.6708 | 0.6661 | 0.6622 | 0.6690 |
+| 0.0 | 0.6931 | 0.6916 | 0.6644 | 0.6749 |
+| 0.2 | 0.6597 | 0.6528 | 0.6433 | 0.6518 |
+| 0.5 | 0.6153 | 0.6076 | 0.6200 | 0.6260 |
+| 0.7 | 0.6778 | 0.6755 | 0.6489 | 0.6539 |
+| 1.0 | 0.5694 | 0.5398 | 0.5289 | 0.4933 |
 
 ```
 HorizontalFlip(p) | Train Accuracy        | Test Accuracy         | Train F1              | Test F1
