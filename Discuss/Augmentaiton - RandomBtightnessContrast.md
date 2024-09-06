@@ -116,7 +116,19 @@ class DataGenerator(tf.keras.utils.Sequence):
 
     def on_epoch_end(self):
     def __data_generation(self, indexes):
+```
 
+```
+# 적용 예시
+'train_augs': [
+    A.GaussNoise(var_limit=(10.0, 100.0), mean=0, p=0.5),
+    A.Resize(256, 256, always_apply=True)
+],
+'train_batch_augmentation_params': {
+    'edge_mixup': [0.0, 0.2, 40]  # Probability, alpha, edge width
+},
+'valid_augs': [A.Resize(256, 256, always_apply=True)],
+'valid_batch_augmentation_params': {}
 
 
 train_aug_pipeline = AugmentationPipeline(albumentation_augs=train_augs)
@@ -124,15 +136,6 @@ train_batch_aug = BatchAugmentation(train_batch_augmentation_params)
 
 valid_aug_pipeline = AugmentationPipeline(albumentation_augs=valid_augs)
 valid_batch_aug = BatchAugmentation(valid_batch_augmentation_params)
-
-model = build_model()
-model.summary()
-
-EPOCHS = epoch_setting
-lr = ReduceLROnPlateau(monitor = 'val_f1_score', factor = 0.1, patience = 1, min_delta = 0.01,
-                          mode='max',verbose=1)
-all_oof,all_true,all_index = [],[],[]
-all_history = defaultdict(list)
 
 train_gen = DataGenerator(df_train,
                           batch_size=train_batch_setting, shuffle=True,
