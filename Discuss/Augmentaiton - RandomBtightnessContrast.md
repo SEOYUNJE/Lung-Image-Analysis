@@ -53,3 +53,60 @@ Version 35
 ---------------------------------------------------------------------------------------------
                                   0.63                    0.65                    0.67                    0.69                    0.71
 ```
+
+### 세팅 (-0.1, 0.1) (-0.2, 0.2) 0.5
+![image](https://github.com/user-attachments/assets/b4a92361-4f6d-4d72-a772-3afd53c0d8b9)
+
+
+
+### 코드
+```python
+class AugmentationPipeline:
+    def __init__(self, albumentation_augs=None):
+        self.albumentation_augs = A.Compose(albumentation_augs) if albumentation_augs else None
+
+    def apply(self, images):
+        if self.albumentation_augs:
+            if len(images.shape) == 4:  # 배치 처리
+                return np.array([self.albumentation_augs(image=img)['image'] for img in images])
+            elif len(images.shape) == 3:  # 단일 이미지 처리
+                return self.albumentation_augs(image=images)['image']
+            else:
+                raise ValueError("Unexpected input shape. Expected 3D or 4D array.")
+        return images
+
+class BatchAugmentation:
+    def __init__(self, augmentation_params):
+    def apply(self, X, y):
+    def _apply_mixup(self, X, y):
+    def _apply_cutmix(self, X, y):
+    def _apply_edge_mixup(self, X, y):
+
+class DataGenerator(tf.keras.utils.Sequence):
+    def __init__(self, data, batch_size=16, shuffle=False, preprocess=None, augmentation_pipeline=None, batch_augmentation=None):
+        self.data = data
+        self.batch_size = batch_size
+        self.shuffle = shuffle
+        self.preprocess = preprocess
+        self.augmentation_pipeline = augmentation_pipeline
+        self.batch_augmentation = batch_augmentation
+        self.on_epoch_end()
+        self.clahe = cv2.createCLAHE(clipLimit=clahe_setting[0], tileGridSize=clahe_setting[1])
+
+    def __len__(self):
+        return int(np.ceil(len(self.data) / self.batch_size))
+
+    def __getitem__(self, index):
+        indexes = self.indexes[index*self.batch_size:(index+1)*self.batch_size]
+        X, y = self.__data_generation(indexes)
+        if self.preprocess:X = self.preprocess(X)
+        if self.augmentation_pipeline:
+            X_uint8 = X.clip(0, 255).astype(np.uint8)
+            X_augmented = self.augmentation_pipeline.apply(X_uint8)
+            X = X_augmented.astype(np.float32)
+        
+        if self.batch_augmentation:X, y = self.batch_augmentation.apply(X, y)
+        return X, y
+
+
+```
