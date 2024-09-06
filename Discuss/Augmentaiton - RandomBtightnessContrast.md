@@ -18,6 +18,7 @@
 | (-0.3, 0.3) | (-0.3, 0.3) | 0.5 | 0.6667 | 0.6619 | 0.6389 |
 
 
+```jsx
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
@@ -64,3 +65,4 @@ const PerformanceGraph = () => (
 );
 
 export default PerformanceGraph;
+```
