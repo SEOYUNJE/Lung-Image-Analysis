@@ -1,4 +1,5 @@
-Version 35
+## Version 35 RandomBrightnessContrast
+- 최적의 세팅: A.RandomBrightnessContrast(brightness_limit=0.1, contrast_limit=0.2, p=0.5)
 
 #### 실험결과
 | Brightness Limit | Contrast Limit | 확률 | 훈련 정확도 | 훈련 F1 점수 | TEST 정확도 |
