@@ -114,5 +114,6 @@ class DataGenerator(tf.keras.utils.Sequence):
         if self.batch_augmentation:X, y = self.batch_augmentation.apply(X, y)
         return X, y
 
-
+    def on_epoch_end(self):
+    def __data_generation(self, indexes):
 ```
