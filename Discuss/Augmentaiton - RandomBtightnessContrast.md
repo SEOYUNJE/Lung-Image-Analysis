@@ -116,4 +116,27 @@ class DataGenerator(tf.keras.utils.Sequence):
 
     def on_epoch_end(self):
     def __data_generation(self, indexes):
+
+
+
+train_aug_pipeline = AugmentationPipeline(albumentation_augs=train_augs)
+train_batch_aug = BatchAugmentation(train_batch_augmentation_params)
+
+valid_aug_pipeline = AugmentationPipeline(albumentation_augs=valid_augs)
+valid_batch_aug = BatchAugmentation(valid_batch_augmentation_params)
+
+model = build_model()
+model.summary()
+
+EPOCHS = epoch_setting
+lr = ReduceLROnPlateau(monitor = 'val_f1_score', factor = 0.1, patience = 1, min_delta = 0.01,
+                          mode='max',verbose=1)
+all_oof,all_true,all_index = [],[],[]
+all_history = defaultdict(list)
+
+train_gen = DataGenerator(df_train,
+                          batch_size=train_batch_setting, shuffle=True,
+                          augmentation_pipeline=train_aug_pipeline,
+                          batch_augmentation=train_batch_aug,
+                          preprocess=preprocess_input)
 ```
