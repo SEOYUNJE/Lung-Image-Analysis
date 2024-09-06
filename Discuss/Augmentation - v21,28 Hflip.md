@@ -1,6 +1,6 @@
 # Hflip
 - 효과 없음
-
+- lr 3e-3고 1e-3 각각에서 실험해보았을 때 모두 좋게 나오지 않았음
 
 # V21 Horizontal flip + lr 3e-3
 
