@@ -25,6 +25,6 @@ for i, (_, valid_index) in enumerate(kf.split(df_train)):
 
 | Experiment | Train Accuracy | Train F1 | Test Accuracy | Test F1 |
 |------------|----------------|----------|---------------|---------|
-| GSKF(Patient ID) | 0.6238 | 0.6340 | 0.6644 | 0.6582 |
+| GKF(Patient ID) | 0.6238 | 0.6340 | 0.6644 | 0.6582 |
 | SKF | 0.634604439 | 0.644030179 | 0.662116041 | 0.656995729 |
 | Kfold | 0.628059192 | 0.639052748 | 0.660978385 | 0.656961528 |
