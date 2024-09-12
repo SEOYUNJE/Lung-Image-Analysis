@@ -1,33 +1,85 @@
-# 미완
-# 1. Focal Loss Crossentropy
+# Loss Function
+- Categorical Cross Entropy vs Categorical Focal Cross Entropy
 
-## 1) 변수 설정 코드 부분
-loss = tf.keras.losses.CategoricalFocalCrossentropy(alpha=alpha_setting, gamma=gamma_setting, label_smoothing=0)
+# 1. 결론
+1. CategoricalFocal Loss를 사용하면 기준 모델보다 더 나은 성능을 얻을 수 있음
+2. α = 0.7500, γ = 2.0000 설정이 가장 효과적
+   - 데이터셋에 약간의 클래스 불균형이 있고 중간 정도의 난이도를 가진 샘플이 많을 수 있음을 시사
+3. 하이퍼파라미터 튜닝의 중요성
+   - α와 γ 값을 적절히 조절하면 모델의 성능을 크게 향상시킬 수 있음
+# 2. 결과
+### 결과 1
+| Experiment              | α      | γ      | train_accuracy | train_f1 | test_accuracy | test_f1 |
+|-------------------------|--------|--------|----------------|----------|---------------|---------|
+| CategoricalCrossentropy | -      | -      | 0.6958         | 0.6930   | 0.6522        | 0.6616  |
+||||||||
+| CategoricalFocal        | 0.25 | 2 | 0.6931         | 0.6895   | 0.6633        | 0.6719  |
+| CategoricalFocal        | 0.50 | 2 | 0.6847         | 0.6819   | 0.6300        | 0.6434  |
+| CategoricalFocal        | 0.75 | 2 | 0.6861         | 0.6818   | 0.6678        | 0.6781  |
+||||||||
+| CategoricalFocal        | 0.25 | 1 | 0.6389         | 0.6331   | 0.6400        | 0.6477  |
+| CategoricalFocal        | 0.25 | 3 | 0.6764         | 0.6739   | 0.6333        | 0.6379  |
+| CategoricalFocal        | 0.50 | 1 | 0.6708         | 0.6693   | 0.6344        | 0.6428  |
+| CategoricalFocal        | 0.75 | 1.5 | 0.6806         | 0.6762   | 0.6444        | 0.6519  |
+| CategoricalFocal        | 0.25 | 4 | 0.6833         | 0.6805   | 0.6533        | 0.6624  |
+| CategoricalFocal        | 0.50 | 3 | 0.6639         | 0.6591   | 0.6489        | 0.6622  |
 
-```
-def build_model():
-    inp = tf.keras.layers.Input(shape=(256,256,3))
-    res_model = resnet18(include_top=False, weights='imagenet', input_shape=(256,256,3))
-    res_model._name = 'resnet18'
 
-    ## Freezing Layer(10% Layer)
-    for layer in res_model.layers[:len(res_model.layers)//10]:
-        layer.trainable = False
+| Experiment              | α      | γ      | train_accuracy       | train_f1            | test_accuracy       | test_f1             |
+|-------------------------|--------|--------|----------------------|---------------------|---------------------|---------------------|
+| CategoricalCrossentropy | -      | -      | [███████████]0.6958  | [███████████]0.6930 | [██████████]0.6522  | [██████████]0.6616  |
+||||||||
+| CategoricalFocal        | 0.25 | 2 | [███████████]0.6931  | [███████████]0.6895 | [███████████]0.6633 | [███████████]0.6719 |
+| CategoricalFocal        | 0.50 | 2 | [█████████]0.6847    | [█████████]0.6819   | [█]0.6300           | [█████]0.6434       |
+| CategoricalFocal        | 0.75 | 2 | [██████████]0.6861   | [█████████]0.6818   | [███████████]0.6678 | [███████████]0.6781 |
+||||||||
+| CategoricalFocal        | 0.25 | 1 | [█]0.6389            | [█]0.6331           | [██████]0.6400      | [███████]0.6477     |
+| CategoricalFocal        | 0.25 | 3 | [██████████]0.6764   | [██████████]0.6739  | [██]0.6333          | [█]0.6379           |
+| CategoricalFocal        | 0.50 | 1.5 | [███████]0.6708      | [████████]0.6693    | [██]0.6344          | [████]0.6428        |
+| CategoricalFocal        | 0.75 | 1 | [████████]0.6806     | [████████]0.6762    | [███████]0.6444     | [███████]0.6519     |
+| CategoricalFocal        | 0.25 | 4 | [█████████]0.6833    | [█████████]0.6805   | [██████████]0.6533  | [███████████]0.6624 |
+| CategoricalFocal        | 0.50 | 3 | [██████]0.6639       | [██████]0.6591      | [████████]0.6489    | [███████████]0.6622 |
 
-    x = res_model(inp)
-    x = tf.keras.layers.GlobalAveragePooling2D()(x)
-    x = tf.keras.layers.Dense(len(TARGET), activation='softmax', dtype='float32')(x)
-
-    # Compile
-    model = tf.keras.Model(inputs=inp, outputs=x, name='hybrid')
-
-    loss = tf.keras.losses.CategoricalFocalCrossentropy(alpha=alpha_setting, gamma=gamma_setting, label_smoothing=0)
-    opt = tf.keras.optimizers.Adam(learning_rate=1e-3)
-
-    model.compile(loss=loss, optimizer=opt, metrics=['accuracy', f1_score])
-
-    return model
-```
-
-## 2) 결과
+### 결과 2
 ![image](https://github.com/user-attachments/assets/812d8a73-00b4-4ace-9d6e-c3fb8b1c50e1)
+
+# 3. 실험 결과 해석
+ 
+> ## 1. 기준 모델 (CategoricalCrossentropy)
+> - 훈련 정확도와 F1 점수가 높지만, 테스트 성능이 다소 떨어짐
+> - 약간의 과적합 징후를 보임
+> 
+> ## 2. 최고 성능 모델
+> - **CategoricalFocal (α = 0.7500, γ = 2.0000)**
+>   - 테스트 정확도(0.6678)와 F1 점수(0.6781)가 가장 높음
+>   - 잘못 분류된 샘플에 더 큰 가중치를 부여하면서 중간 정도의 어려운 샘플에 집중하는 전략이 효과적
+> 
+> ## 3. α (알파) 값의 영향
+> - α가 증가할수록 (0.2500 → 0.5000 → 0.7500) 일반적으로 성능이 향상되는 경향
+> - 데이터셋에 클래스 불균형이 있을 가능성을 시사
+> 
+> ## 4. γ (감마) 값의 영향
+> - γ = 2.0000일 때 대체로 좋은 성능을 보임
+> - γ 값이 너무 높아지면 (3.0000, 4.0000) 성능이 다소 떨어지는 경향
+> - 너무 어려운 샘플에만 과도하게 집중하면 일반화 성능이 저하될 수 있음
+> 
+> ## 5. 과적합 vs 일반화
+> - CategoricalFocal (α = 0.7500, γ = 2.0000): 훈련과 테스트 성능의 차이가 작아, 좋은 일반화 능력을 보여줌
+> - 일부 설정 (예: α = 0.2500, γ = 3.0000): 훈련과 테스트 성능의 차이가 커서 과적합 징후를 보임
+> 
+> ## 6. 안정성
+> - α = 0.2500, γ = 2.0000 설정도 안정적인 성능을 보이며, 기준 모델보다 나은 테스트 성능을 보여줌
+
+
+# cf) Categorical Focal CrossEntropy
+| α (알파) | γ (감마) | 설정의 의미 |
+|----------|----------|------------|
+| 0.2500   | 2.0000   | - 약간의 클래스 불균형 처리<br>- 중간 정도의 어려운 샘플 집중 |
+| 0.5000   | 2.0000   | - 균형잡힌 클래스 처리<br>- 중간 정도의 어려운 샘플 집중 |
+| 0.7500   | 2.0000   | - 잘못 분류된 샘플에 더 큰 가중치<br>- 중간 정도의 어려운 샘플 집중 |
+| 0.2500   | 1.0000   | - 약간의 클래스 불균형 처리<br>- 모든 샘플을 비교적 균등하게 처리 |
+| 0.2500   | 3.0000   | - 약간의 클래스 불균형 처리<br>- 어려운 샘플에 강한 집중 |
+| 0.5000   | 1.5000   | - 균형잡힌 클래스 처리<br>- 약간의 어려운 샘플 집중 |
+| 0.7500   | 1.0000   | - 잘못 분류된 샘플에 더 큰 가중치<br>- 모든 샘플을 비교적 균등하게 처리 |
+| 0.2500   | 4.0000   | - 약간의 클래스 불균형 처리<br>- 매우 어려운 샘플에 극도로 집중 |
+| 0.5000   | 3.0000   | - 균형잡힌 클래스 처리<br>- 어려운 샘플에 강한 집중 |
