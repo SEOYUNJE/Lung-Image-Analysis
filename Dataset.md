@@ -8,6 +8,7 @@ There are 10classes(9 diseases, and one for "No Findings")
 
 
 Here is **[Rapid CXR Dataset](https://www.kaggle.com/datasets/seoyunje/rapid-cxr-dataset)**
+There are no multi Label 
 
   | Finding Labels       | Count |
   |----------------------|-------|
@@ -25,18 +26,19 @@ Here is **[Rapid CXR Dataset](https://www.kaggle.com/datasets/seoyunje/rapid-cxr
 #### Modifications to original data(Version 2)
 
 Here is **[CXR NIH Dataset](https://www.kaggle.com/datasets/seoyunje/cxr-nih-dataset/data)**
+There are multi Label(ex: 'Fibrosis|Edema|Consolidation')
 
   | Finding Labels       | Count |
   |----------------------|-------|
   | No Finding           | 1000   |
-  | Edema                | 628   |
-  | Atelectasis          | 1000   |
-  | Pneumonia            | 322   |
-  | Effusion             | 1000   |
-  | Pneumothorax         | 1000   |
-  | Emphysema            | 892   |
-  | Consolidation        | 1000   |
-  | Fibrosis             | 727   |
+  | Edema                | 209   |
+  | Atelectasis          | 1410   |
+  | Pneumonia            | 135   |
+  | Effusion             | 1370   |
+  | Pneumothorax         | 693   |
+  | Emphysema            | 320   |
+  | Consolidation        | 530   |
+  | Fibrosis             | 190   |
 
   ### 📌 NIH Big Dataset
 
