@@ -30,6 +30,8 @@ Here is **[CXR NIH Dataset](https://www.kaggle.com/datasets/seoyunje/cxr-nih-dat
 
 There are multi Label(ex: 'Fibrosis|Edema|Consolidation')
 
+There are 5,000 imgs in dataset
+
   | Finding Labels       | Count |
   |----------------------|-------|
   | No Finding           | 1000   |
@@ -45,6 +47,20 @@ There are multi Label(ex: 'Fibrosis|Edema|Consolidation')
   ### 📌 NIH Big Dataset
 
   Here is **[NIH Big Dataset](https://www.kaggle.com/datasets/nih-chest-xrays/data)**
+
+  There are 81301 imgs in datasets
+
+  | Finding Labels       | Count |
+  |----------------------|-------|
+  | No Finding           | 60361   |
+  | Edema                | 1172   |
+  | Atelectasis          | 7164   |
+  | Pneumonia            | 737   |
+  | Effusion             | 7478   |
+  | Pneumothorax         | 3611   |
+  | Emphysema            | 1725   |
+  | Consolidation        | 2675   |
+  | Fibrosis             | 1027   |
 
   ## PadChest Dataset 
 
