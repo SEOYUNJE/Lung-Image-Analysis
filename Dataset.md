@@ -34,15 +34,15 @@ There are 5,000 imgs in dataset
 
   | Finding Labels       | Count |
   |----------------------|-------|
-  | No Finding           | 1000   |
-  | Edema                | 209   |
-  | Atelectasis          | 1410   |
-  | Pneumonia            | 135   |
-  | Effusion             | 1370   |
-  | Pneumothorax         | 693   |
-  | Emphysema            | 320   |
-  | Consolidation        | 530   |
-  | Fibrosis             | 190   |
+  | No Finding           | 500   |
+  | Edema                | 241   |
+  | Atelectasis          | 1440   |
+  | Pneumonia            | 385   |
+  | Effusion             | 1524   |
+  | Pneumothorax         | 725   |
+  | Emphysema            | 343   |
+  | Consolidation        | 557   |
+  | Fibrosis             | 205   |
 
   ### 📌 NIH Big Dataset
 
