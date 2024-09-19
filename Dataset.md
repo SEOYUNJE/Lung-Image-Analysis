@@ -35,6 +35,8 @@ Here is **[CXR NIH Dataset](https://www.kaggle.com/datasets/seoyunje/cxr-nih-dat
   | Effusion             | 1000   |
   | Pneumothorax         | 1000   |
   | Emphysema            | 892   |
+  | Consolidation        | 1000   |
+  | Fibrosis             | 727   |
 
   ### 📌 NIH Big Dataset
 
@@ -42,7 +44,8 @@ Here is **[CXR NIH Dataset](https://www.kaggle.com/datasets/seoyunje/cxr-nih-dat
 
   ## PadChest Dataset 
 
-  ### 📌 PadChest Small Dataset(PC Dataset)
+  ### 📌 PadChest Small Dataset
 
   ### 📌 PadChest Big Dataset
 
+  Here is **[PadChest Big Dataset](https://www.kaggle.com/datasets/seoyunje/padchest-small-dataset)**
