@@ -42,7 +42,7 @@ Here is **[CXR NIH Dataset](https://www.kaggle.com/datasets/seoyunje/cxr-nih-dat
 
   ## PadChest Dataset 
 
-  ### 📌 NIH Small Dataset
+  ### 📌 PadChest Small Dataset(PC Dataset)
 
-  ### 📌 NIH Big Dataset
+  ### 📌 PadChest Big Dataset
 
