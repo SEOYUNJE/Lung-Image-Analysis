@@ -52,7 +52,7 @@ There are 5,000 imgs in dataset
 
   | Finding Labels       | Count |
   |----------------------|-------|
-  | No Finding           | 60361   |
+  | No Finding           | 10000   |
   | Edema                | 1172   |
   | Atelectasis          | 7164   |
   | Pneumonia            | 737   |
@@ -62,10 +62,5 @@ There are 5,000 imgs in dataset
   | Consolidation        | 2675   |
   | Fibrosis             | 1027   |
 
-  ## PadChest Dataset 
+  ## Test Dataset 
 
-  ### 📌 PadChest Small Dataset
-
-  ### 📌 PadChest Big Dataset
-
-  Here is **[PadChest Big Dataset](https://www.kaggle.com/datasets/seoyunje/padchest-small-dataset)**
