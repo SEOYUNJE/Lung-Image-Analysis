@@ -1,4 +1,5 @@
 ## NIH Dataset
+Here is **[Original NIH Dataset](https://www.kaggle.com/datasets/nih-chest-xrays/data)**
 
 ### 📌 NIH Small Dataset
 
@@ -63,7 +64,8 @@ There are 5,000 imgs in dataset
   | Fibrosis             | 1027   |
 
   ## Pad Chest Dataset 
-
+  Of these reports, 27% were manually annotated by trained physicians and the remaining set was labeled using a supervised method based on a recurrent neural network with attention mechanisms.
+    
   Here is **[Pad Chest Dataset](https://www.kaggle.com/datasets/seoyunje/pc-dataset)**
 
   There are 29907 imgs in datasets
