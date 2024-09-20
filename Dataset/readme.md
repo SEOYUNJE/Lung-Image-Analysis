@@ -62,5 +62,10 @@ There are 5,000 imgs in dataset
   | Consolidation        | 2675   |
   | Fibrosis             | 1027   |
 
-  ## Test Dataset 
+  ## Pad Chest Dataset 
 
+  Here is **[Pad Chest Dataset](https://www.kaggle.com/datasets/seoyunje/pc-dataset)**
+
+  There are 29948 imgs in datasets
+
+  
