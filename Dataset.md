@@ -46,9 +46,9 @@ There are 5,000 imgs in dataset
 
   ### 📌 NIH Big Dataset
 
-  Here is **[NIH Big Dataset](https://www.kaggle.com/datasets/nih-chest-xrays/data)**
+  Here is **[NIH Big Dataset](https://www.kaggle.com/datasets/seoyunje/nih-big-dataset)**
 
-  There are 81301 imgs in datasets
+  There are 30940 imgs in datasets
 
   | Finding Labels       | Count |
   |----------------------|-------|
