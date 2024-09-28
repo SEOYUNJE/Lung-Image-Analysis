@@ -1,5 +1,7 @@
 ## xLSTM: Extended Long Short-Term Memory
 
+[Deep Dive into xLSTM](https://medium.com/@zergtant/deep-dive-into-xlstm-the-evolution-of-lstm-architecture-and-pytorch-code-implementation-d901a14bbcec)
+
 ### sLSTMBlock
 sLSTM is often described as an enhanced version of LSTM with scalar or sequence-level updates, which may include improvements to the gating mechanisms (such as exponential gating) and optimizations of the memory structure. The focus in the paper might be more on enhancing the capabilities of LSTM through algorithmic optimizations rather than employing complex network layers and structures like in code implementations.
 
