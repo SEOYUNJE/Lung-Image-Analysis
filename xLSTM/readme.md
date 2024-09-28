@@ -1,17 +1,21 @@
 ## xLSTM: Extended Long Short-Term Memory
 
-Attempts to scale LSTMs to billions of parameters using the latest techniques from modern LLMs and mitigating common limitations of LSTMs.
+### sLSTMBlock
+sLSTM is often described as an enhanced version of LSTM with scalar or sequence-level updates, which may include improvements to the gating mechanisms (such as exponential gating) and optimizations of the memory structure. The focus in the paper might be more on enhancing the capabilities of LSTM through algorithmic optimizations rather than employing complex network layers and structures like in code implementations.
 
-To enable LSTMs the ability to revise storage decisions, they introduce exponential gating and a new memory mixing mechanism (termed sLSTM).
+![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*kaF4EHLQGPil_xoMTh-HQg.png)
 
-To enhance the storage capacities of LSTMs, they add a matrix memory and a covariance update rule (termed mLSTM).
+- Layer normalization (LayerNorm) is used in the code to stabilize the input of each layer.
+- Causal convolution (CausalConv1D) has been introduced, which ensures the temporal order of information in sequence - data processing and avoids leakage of future information.
+- A block diagonal matrix transformation (BlockDiagonal) is used to process data from different heads in parallel.
+- Residual connections have been implemented, increasing the stability of the model when processing deep networks.
+- The output undergoes non-linear transformation and normalization using GELU and GroupNorm.
 
-Both the sLSTM and xLSTM cells stabilize their exponential gates using the same technique.
+### mLSTMBlock
+mLSTM is described as an LSTM variant with matrix memory, capable of processing and storing more information in parallel. This typically involves a fundamental change in the memory structure, such as using matrices instead of scalars to store the cell states of LSTM.
 
-These extensions lead to xLSTM blocks that are residually stacked into the final xLSTM architecture.
+![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*tYAWqSGv-hLaxtij1C4ezg.png)
 
-Compared to Transformers, xLSTMs have a linear computation and constant memory complexity concerning the sequence length.
-
-The xLSTM architecture is shown to be efficient at handling different aspects of long context problems.
-
-![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F19186184%2F553d10b765685f9c6cdb43fb3ce05cc4%2F20240509_105022.jpg?generation=1715265245484790&alt=media)
+- Similar to the sLSTMBlock, layer normalization, causal convolution, and residual connections are used.
+- A unique projection strategy is employed, such as projecting to a higher-dimensional space followed by processing through activation functions and linear transformations.
+- The use of matrix memory is emphasized, which in mLSTM manifests as matrix operations on the inputs and hidden states, as well as the use of BlockDiagonal for block processing.
