@@ -73,12 +73,12 @@ There are 5,000 imgs in dataset
   | Finding Labels       | Count |
   |----------------------|-------|
   | No Finding           | 10000   |
-  | Edema                | 458   |
-  | Atelectasis          | 4420   |
-  | Pneumonia            | 3625   |
+  | Edema                | 462   |
+  | Atelectasis          | 4504   |
+  | Pneumonia            | 3939   |
   | Effusion             | 4164   |
-  | Pneumothorax         | 249   |
-  | Emphysema            | 961   |
-  | Consolidation        | 1032  |
-  | Fibrosis             | 682   |
+  | Pneumothorax         | 305   |
+  | Emphysema            | 967   |
+  | Consolidation        | 1071  |
+  | Fibrosis             | 683   |
   
