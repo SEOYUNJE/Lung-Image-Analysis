@@ -1,4 +1,4 @@
-# PC dataset v4
+![image](https://github.com/user-attachments/assets/bc28f4d4-d8e7-487a-9d14-12a5d869a0e3)# PC dataset v4
 
 ## 1. Label Smooth
 ![image](https://github.com/user-attachments/assets/4740eb52-5598-49f0-9902-0285e4d73008)
@@ -28,5 +28,17 @@
 ![image](https://github.com/user-attachments/assets/56da8d3d-6306-4bde-af9c-1f911a44159f)
 
 ## 2. Learning Rate
+![image](https://github.com/user-attachments/assets/01b06145-0b07-447e-97f4-b6dc3d6ecd6d)
+- Best results at Learning Rate Setting of 3e-4
+- Metric
+![image](https://github.com/user-attachments/assets/f3074b1f-d723-4ff1-9a50-0be98fe9a730)
+- Train
+![image](https://github.com/user-attachments/assets/8d6b848e-b86b-4d77-81bc-d3a7512e0695)  
+- Test
+![image](https://github.com/user-attachments/assets/70907634-d232-4989-8d0e-103c66990563)
+
 
 ## 3. CLAHE
+![image](https://github.com/user-attachments/assets/3cdbd0ea-2c60-480d-b1e7-f3ce69629e28)
+- No distinct difference according to setting
+- [2.0, (4,4)]
