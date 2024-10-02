@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/bc28f4d4-d8e7-487a-9d14-12a5d869a0e3)# PC dataset v4
+# PC dataset v4
 
 ## 1. Label Smooth
 ![image](https://github.com/user-attachments/assets/4740eb52-5598-49f0-9902-0285e4d73008)
