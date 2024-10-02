@@ -49,7 +49,11 @@ There are 5,000 imgs in dataset
 
   Here is **[NIH Big Dataset](https://www.kaggle.com/datasets/seoyunje/nih-big-dataset)**
 
-  There are 30940 imgs in datasets
+  - There are `30940` imgs in datasets
+
+  - There are `15502` patients in datasets
+
+  - There are `19389` PA , `11551` AP in datasets
 
   | Finding Labels       | Count |
   |----------------------|-------|
