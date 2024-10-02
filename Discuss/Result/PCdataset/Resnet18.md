@@ -26,6 +26,8 @@
 ![image](https://github.com/user-attachments/assets/48243f5d-2f13-4f72-a0e2-572b3213a5ba)
 - Test
 ![image](https://github.com/user-attachments/assets/56da8d3d-6306-4bde-af9c-1f911a44159f)
+- GradCAM
+
 
 ## 2. Learning Rate
 ![image](https://github.com/user-attachments/assets/01b06145-0b07-447e-97f4-b6dc3d6ecd6d)
@@ -36,6 +38,8 @@
 ![image](https://github.com/user-attachments/assets/8d6b848e-b86b-4d77-81bc-d3a7512e0695)  
 - Test
 ![image](https://github.com/user-attachments/assets/70907634-d232-4989-8d0e-103c66990563)
+- GradCAM
+![image](https://github.com/user-attachments/assets/133fb62f-7916-4d3a-9461-8f1e44043e88)
 
 
 ## 3. CLAHE
