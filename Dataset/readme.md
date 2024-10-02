@@ -68,17 +68,22 @@ There are 5,000 imgs in dataset
     
   Here is **[Pad Chest Dataset](https://www.kaggle.com/datasets/seoyunje/pc-dataset)**
 
-  There are 29907 imgs in datasets
+  - There are `30373` imgs in datasets
+  
+  - There are `23766` patients in datasets
+  
+  - There are `28345` PA, `2028` AP in datasets
 
   | Finding Labels       | Count |
   |----------------------|-------|
   | No Finding           | 10000   |
-  | Edema                | 462   |
+  | Cardiomegaly         | 8757   |
   | Atelectasis          | 4504   |
-  | Pneumonia            | 3939   |
-  | Effusion             | 4164   |
-  | Pneumothorax         | 305   |
+  | Effusion            | 4192   |
+  | Pneumonia             | 3939   |
+  | Consolidation         | 1071   |
   | Emphysema            | 967   |
-  | Consolidation        | 1071  |
-  | Fibrosis             | 683   |
+  | Fibrosis        | 683  |
+  | Edema             | 462   |
+  | Pneumothorax            | 305   |
   
