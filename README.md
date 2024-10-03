@@ -60,7 +60,9 @@ Here is **[Rapid CXR Dataset](https://www.kaggle.com/datasets/seoyunje/rapid-cxr
 
 => The image below is a diagram of hierarchical medical data.
 
-![dataset](https://github.com/user-attachments/assets/f99b32e3-61aa-4b4a-8281-b091238b948e)
+![hier](https://github.com/user-attachments/assets/e6d867c7-4b8c-4d25-87a1-fd6ef0153b14)
 
+
+![cxr](https://github.com/user-attachments/assets/eeee774a-3945-4d68-9cca-c491b455f956)
 
 
