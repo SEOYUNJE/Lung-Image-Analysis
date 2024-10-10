@@ -37,3 +37,8 @@ for opt_set in optimizer_settings:
     )
 ```
 ** No augmentation applied
+
+
+![image](https://github.com/user-attachments/assets/4ff32a8e-2cdd-4209-8179-1d79dac18b0d)
+![image](https://github.com/user-attachments/assets/fd095e8b-7a32-4755-9206-c63434668b8a)
+
