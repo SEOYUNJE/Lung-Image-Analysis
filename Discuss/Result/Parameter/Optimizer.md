@@ -1,3 +1,6 @@
+## PC v5 (24.10.10)
+
+
 | optimizer_setting                                                        | train_results_avg_f1_score | train_results_avg_auc | test_results_avg_f1_score | test_results_avg_auc | sample_number_setting | epoch_setting | label_smooth_setting | learning_rate_setting | train_batch_setting | valid_batch_setting | test_batch_setting | fold_num_setting | clahe_setting | base_model |  |
 |--------------------------------------------------------------------------|----------------------------|-----------------------|---------------------------|----------------------|-----------------------|---------------|----------------------|-----------------------|---------------------|---------------------|--------------------|------------------|---------------|------------|--|
 | optimizers.Adadelta(learning_rate=learning_rate_setting, rho=0.95)       |         0.0762463807782193 |    0.7061301183898986 |       0.08188296306626067 |   0.7012937568907734 |                   500 |            10 |                 0.15 |                0.0003 |                  16 |                  32 |                 64 |                1 | [2.0, (4, 4)] | resnet18   |  |
