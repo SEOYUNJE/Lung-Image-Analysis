@@ -57,15 +57,15 @@ There are 5,000 imgs in dataset
 
   | Finding Labels       | Count |
   |----------------------|-------|
-  | No Finding           | 10000   |
-  | Edema                | 1172   |
-  | Atelectasis          | 7164   |
-  | Pneumonia            | 737   |
-  | Effusion             | 7478   |
-  | Pneumothorax         | 3611   |
-  | Emphysema            | 1725   |
-  | Consolidation        | 2675   |
-  | Fibrosis             | 1027   |
+  | No Finding           | 9526   |
+  | Edema                | 1131   |
+  | Atelectasis          | 7028   |
+  | Pneumonia            | 690   |
+  | Effusion             | 7320   |
+  | Pneumothorax         | 3501   |
+  | Emphysema            | 1667   |
+  | Consolidation        | 2543   |
+  | Fibrosis             | 1022   |
 
   ## Pad Chest Dataset 
   Of these reports, 27% were manually annotated by trained physicians and the remaining set was labeled using a supervised method based on a recurrent neural network with attention mechanisms.
