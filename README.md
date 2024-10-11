@@ -113,6 +113,11 @@ The detection and classification of diseases from Chest X-ray (CXR) images is a 
 ![hier](https://github.com/user-attachments/assets/e6d867c7-4b8c-4d25-87a1-fd6ef0153b14)
 
 ## Data Preprocssing
+![image](https://github.com/user-attachments/assets/74a35f27-d249-4587-aca6-023dec5ca3ef)
+
+## Data Augmentation
+
+![image](https://github.com/user-attachments/assets/db88dfaa-f803-4640-ba7e-bc8d8590ac38)
 
 
 
