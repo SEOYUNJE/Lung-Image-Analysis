@@ -60,6 +60,7 @@ The detection and classification of diseases from Chest X-ray (CXR) images is a 
         | Emphysema            | 1667   |
         | Consolidation        | 2543   |
         | Fibrosis             | 1022   |
+        | Cardiomegaly         | 1904   |
 
 ### 📌 PC Dataset
 
@@ -104,8 +105,9 @@ The detection and classification of diseases from Chest X-ray (CXR) images is a 
         | Emphysema            | 962   |
         | Consolidation        | 1032   |
         | Fibrosis             | 683   |
+        | Cardiomegaly         | 8722   |
 
-![image](https://github.com/user-attachments/assets/98bd7548-762d-4bfb-bebe-f451cda5923e)
+![image](https://github.com/user-attachments/assets/61482c15-7aaf-4707-aa68-ededd53d018f)
 
 
 ## The hierarchical relationships between lung diseases
@@ -114,6 +116,12 @@ The detection and classification of diseases from Chest X-ray (CXR) images is a 
 => The image below is a diagram of hierarchical medical data.
 
 ![hier](https://github.com/user-attachments/assets/e6d867c7-4b8c-4d25-87a1-fd6ef0153b14)
+
+![image](https://github.com/user-attachments/assets/7da8910e-311a-49f6-b972-f0ec3bcf76f0)
+
+![image](https://github.com/user-attachments/assets/852fe680-98e1-4c7f-af2d-960955512d5c)
+
+
 
 ## Data Preprocssing
 ![image](https://github.com/user-attachments/assets/74a35f27-d249-4587-aca6-023dec5ca3ef)
