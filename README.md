@@ -119,5 +119,11 @@ The detection and classification of diseases from Chest X-ray (CXR) images is a 
 
 ![image](https://github.com/user-attachments/assets/db88dfaa-f803-4640-ba7e-bc8d8590ac38)
 
+## Hybrid Model
 
+![image](https://github.com/user-attachments/assets/2c59b002-1b43-4f8f-965c-5cfb007dd77a)
+
+
+## Hierarchical model
+![image](https://github.com/user-attachments/assets/e0d5f679-8bd8-4ce2-bdde-0f034cf6b952)
 
