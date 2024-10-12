@@ -130,6 +130,17 @@ The detection and classification of diseases from Chest X-ray (CXR) images is a 
 
 ![image](https://github.com/user-attachments/assets/db88dfaa-f803-4640-ba7e-bc8d8590ac38)
 
+## Standardized Train/Test Splits
+Separate sets of cases for training and testing algorithms are important for ensuring that all researchers are using the same cases for these tasks. Specifically, the test set should contain cases of varying difficulty in order to ensure that the method is tested thoroughly. The data were split into a training set and a testing set based on the Lung Diseases. 
+
+There are `47775` images in train set. (80% of total)
+
+There are `11944` images in test set. (20% of total)
+
+![image](https://github.com/user-attachments/assets/02cad021-aca4-4653-9077-45db7a87f3ff)
+
+
+
 ## Hybrid Model
 
 ![image](https://github.com/user-attachments/assets/2c59b002-1b43-4f8f-965c-5cfb007dd77a)
