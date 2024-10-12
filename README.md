@@ -105,6 +105,9 @@ The detection and classification of diseases from Chest X-ray (CXR) images is a 
         | Consolidation        | 1032   |
         | Fibrosis             | 683   |
 
+![image](https://github.com/user-attachments/assets/98bd7548-762d-4bfb-bebe-f451cda5923e)
+
+
 ## The hierarchical relationships between lung diseases
 
 
