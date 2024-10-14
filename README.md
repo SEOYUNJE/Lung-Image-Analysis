@@ -137,13 +137,15 @@ There are `47775` images in train set. (80% of total)
 
 There are `11944` images in test set. (20% of total)
 
-![image](https://github.com/user-attachments/assets/02cad021-aca4-4653-9077-45db7a87f3ff)
+![image](https://github.com/user-attachments/assets/b073dc32-c8ad-4755-ae02-53177aadedfd)
+
 
 
 
 ## Hybrid Model
 
-![image](https://github.com/user-attachments/assets/2a555cf5-107b-47ac-896c-0916f389240d)
+![image](https://github.com/user-attachments/assets/97a77cdb-ac41-4e5f-aee1-dfc3b5888786)
+
 
 
 
